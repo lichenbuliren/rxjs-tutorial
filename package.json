@@ -1,0 +1,18 @@
+{
+  "name": "rxjs-tutorial",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/lichenbuliren/rxjs-tutorial.git",
+  "author": "lichenbuliren <617106268@qq.com>",
+  "license": "MIT",
+  "dependencies": {
+    
+  },
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-core": "^6.26.3"
+  }
+}

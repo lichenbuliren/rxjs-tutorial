@@ -1,8 +1,8 @@
-import { Observable, of } from 'rxjs'
-import { map } from 'rxjs/operators/'
-// import { of } from 'rxjs/observable/of'
+import React from 'react'
+import ReactDOM from 'react-dom'
+import './index.css'
+import App from './App'
+import registerServiceWorker from './registerServiceWorker'
 
-const source$ = of(1,2,3)
-source$.subscribe(console.log, null, () => console.log('completed'))
-
-source$.pipe(map((value, i) => `${value}_${i}`)).subscribe(console.log)
+ReactDOM.render(<App />, document.getElementById('root'))
+registerServiceWorker()

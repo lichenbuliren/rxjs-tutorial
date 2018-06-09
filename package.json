@@ -1,19 +1,16 @@
 {
   "name": "rxjs-tutorial",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://github.com/lichenbuliren/rxjs-tutorial.git",
-  "author": "lichenbuliren <617106268@qq.com>",
-  "license": "MIT",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "rxjs": "^6.2.0",
-    "rxjs-compat": "^6.2.0"
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-scripts": "1.1.4"
   },
   "scripts": {
-    "start": "parcel index.html"
-  },
-  "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-preset-env": "^1.7.0"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   }
 }

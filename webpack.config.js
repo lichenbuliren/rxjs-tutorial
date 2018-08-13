@@ -10,13 +10,13 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'react-tmap.min.js',
+    filename: 'rxjs-tutorial.min.js',
     libraryTarget: 'umd',
-    library: 'react-tmap'
+    library: 'rxjs-tutorial'
   },
   module: {
     rules: [{
-      test: /\.jsx?/,
+      test: /\.js?/,
       include: [
         srcPath
       ],
@@ -24,8 +24,7 @@ module.exports = {
         loader: 'babel-loader',
         options: {
           presets: [
-            '@babel/preset-env',
-            '@babel/preset-react'
+            '@babel/preset-env'
           ],
           plugins: [
             require('@babel/plugin-proposal-object-rest-spread'),
@@ -42,16 +41,7 @@ module.exports = {
       'node_modules',
       srcPath
     ],
-    extensions: ['.jsx', '.js']
-  },
-  externals: {
-    qq: 'window.qq',
-    react: {
-      commonjs: 'react',
-      commonjs2: 'react',
-      amd: 'react',
-      root: 'React'
-    }
+    extensions: ['.js']
   },
   plugins: [
     new UglifyPlugin(),
